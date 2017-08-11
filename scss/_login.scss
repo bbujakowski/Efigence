@@ -58,6 +58,7 @@ $main-font: 'Roboto Condensed', sans-serif;
     }
   }
   .user-number {
+    // używasz autoprefixer'a w gulpie więc prefixy -webkit i -ms są tu raczcej niepotrzebne (tu i wszędzie indziej)
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -133,12 +134,13 @@ $main-font: 'Roboto Condensed', sans-serif;
   }
 }
 
+// dziwny max-width =) Podaj lepiej w px
 @media (max-width: 39.9375em) {
-  
+
   .logo {
     margin: 20px auto;
   }
-  
+
   .main-box-login {
     margin-top: 30px;
     .avatar {
